@@ -209,7 +209,7 @@
         </div>
        </section>
        <!-- Discuss Section Start -->
-        <section class="mt-5 bg-[url('/images/bg.jpg')] bg-cover bg-center mx-auto w-[99%] h-[50rem]">
+        <section class="mt-5 bg-[url('/images/bg.jpg')] bg-cover bg-center mx-auto w-[99%] h-[64.5rem]">
           <div>
             <!-- Discuss Section Text -->
            <div class=" text-center pt-14">
@@ -219,27 +219,57 @@
            </div>
            <!-- Discuss Section From -->
             <div class="text-center mt-6">
-              <div class="mb-4 space-y-2">
+              <div class="mb-4 space-y-2 lg:grid lg:grid-cols-2 lg:ml-72 lg:mt-28">
                 <input type="text" id="name" name="name" 
-                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent"
+                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent lg:w-[75%]"
                        placeholder="First Name*">
                 <input type="text" id="name" name="name" 
-                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent"
+                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent lg:w-[75%]"
                        placeholder="Last Name*">
+                <input type="phone" id="phone" name="phone" 
+                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent lg:w-[75%]"
+                       placeholder="Phone Number*">
                 <input type="email" id="email" name="email" 
-                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent"
+                       class=" px-12 py-3 border border-gray-300 rounded-full  focus:border-transparent lg:w-[75%]"
                        placeholder="Email Number*">
-                <input type="text" id="name" name="name" 
-                       class=" px-12 py-28 border border-gray-300 rounded-3xl  focus:border-transparent items-start"
-                       placeholder="Write your message here*">
               </div>
+              <!--Discuss Massage from -->
+               <div class="flex justify-center lg:ml-16 mt-10">
+                <label for="message" class="block text-sm font-medium text-gray-700"></label>
+                       <textarea id="message" name="message" rows="4" class="block px-12 py-28 border rounded-3xl border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 p-2.5 lg:w-[75%]" placeholder="Write your message here*"></textarea>
+               </div>
+               <!-- Discuss Button -->
+               <div class="">
+                <button class="px-36 py-3 border bg-[#ABEF5F] border-gray-300 rounded-full mt-5 lg:w-[75%]">Send Mail
+                  <i class="fa-solid fa-arrow-right text-[#fff] bg-[#1C1C1C] rounded-full px-2 py-2 -rotate-45"></i>
+                </button>
+               </div>
             </div>
           </div>
         </section>
     </main>
-
-    <footer>
-
+    <!-- Footer section start -->
+    <footer class="footer footer-center bg-[#1C1C1C] text-base-content rounded p-10">
+      <div class="">
+        <div class="flex justify-center -ml-10">
+          <i class="fa-solid fa-arrow-right text-[#000] bg-[#ABEF5F] rounded-full px-4 py-4 -rotate-45"></i>
+          <a class="text-[#E9E9E9] text-4xl font-extrabold">Rinterio</a>
+        </div>
+        <p class="text-[#737373] text-[1rem] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <div class="">
+        <nav class="grid grid-flow-col gap-6 lg:gap-48">
+          <a class="link link-hover text-[#E9E9E9] text-[1rem] font-medium">About us</a>
+          <a class="link link-hover text-[#E9E9E9] text-[1rem] font-medium">Contact</a>
+          <a class="link link-hover text-[#E9E9E9] text-[1rem] font-medium">Jobs</a>
+          <a class="link link-hover text-[#E9E9E9] text-[1rem] font-medium">Press kit</a>
+        </nav>
+      </div>
+      <div class="">
+        <button class="px-20 py-3 border bg-[#ABEF5F] border-gray-300 rounded-full mt-5 ">Send Mail
+          <i class="fa-solid fa-arrow-right text-[#fff] bg-[#1C1C1C] rounded-full px-2 py-2 -rotate-45"></i>
+        </button>
+      </div>
     </footer>
 </body>
 </html>
